@@ -1,0 +1,71 @@
+body{
+    margin: 0;
+    font-family: 'Gabriela', serif;     /*czcionka z google.fonts*/
+}
+
+#naglowek{
+    margin: 0;
+    padding: 5px;
+    background-color: grey;
+    color: red;
+    text-align: center;
+    height: 100px;
+}
+#naglowek:hover {                        /* :hover - zmienia parametry elementu po najechaniu kursorem*/
+    color: black;
+    text-shadow: 0px 0px 5px red;      /* cień tekstu- odsunięcie horyzontalne; wertykalne; rozmycie; kolor*/
+    transition-duration: 0.5s;           /*czas trwania zmiany w sekundach*/
+}
+
+#menu{
+    background-color: rgb(173, 173, 173);
+    display: flex;
+    float:left;
+    height: 700px;
+    width: 20%;
+}
+#menu ul {
+    list-style-type: none;              /* usuwa punktory z listy nieuporządkowanej*/
+}
+#menu li {
+    height:50px;
+    width: 150px;
+}
+#menu li a {
+    margin: 5px;
+    background-color: red;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;               /* usuwa podkreślenie i kolor linka "a href" */
+    border-radius: 6px 6px 6px 6px;      /*zaokrąglenie rogów elementu*/
+    float:left;
+    width: 80px;
+}
+#menu li a:hover { 
+    background-color: rgb(0, 0, 0);
+    color: white;
+    box-shadow: 0px 0px 2px 2px red;    /* cień prostokąta- odsunięcie horyzontalne; wertykalne; rozmycie; powiększenie cienia; kolor*/
+}
+
+#tresc{
+    background-color: rgb(216, 216, 216);
+    width: 80%;
+    float: left;
+    height: 700px;
+}
+
+#stopka{
+    clear: both;                           /* wyczyszczenie ustawień przylegania elementu*/
+    height: 10%;
+    background-color: grey;
+    color: red;
+    text-align: center;
+    height: 80px;
+    padding-top: 20px;
+}
+#stopka:hover {
+    color: black;
+    text-shadow: 0px 0px 5px red;
+    transition-duration: 0.5s;
+}
+
