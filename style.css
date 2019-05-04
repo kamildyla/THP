@@ -1,71 +1,90 @@
-body{
+body {
     margin: 0;
-    font-family: 'Gabriela', serif;     /*czcionka z google.fonts*/
+    font-family: 'Gabriela', serif;
+    background-color: black;
 }
 
-#naglowek{
+#container {
+    width: 1000px;
+    margin: auto auto;
+}
+
+#main_header {
     margin: 0;
-    padding: 5px;
+    padding: 1px;
     background-color: grey;
     color: red;
     text-align: center;
     height: 100px;
 }
-#naglowek:hover {                        /* :hover - zmienia parametry elementu po najechaniu kursorem*/
+.mh {
+    margin: 0;
+    padding: 30px;
+}
+.mh:hover {
     color: black;
-    text-shadow: 0px 0px 5px red;      /* cień tekstu- odsunięcie horyzontalne; wertykalne; rozmycie; kolor*/
-    transition-duration: 0.5s;           /*czas trwania zmiany w sekundach*/
+    text-shadow: 0px 0px 5px red;
+    transition-duration: 0.5s;
 }
 
-#menu{
+#menu {
     background-color: rgb(173, 173, 173);
-    display: flex;
-    float:left;
-    height: 700px;
-    width: 20%;
+    width: 1000px;
 }
 #menu ul {
-    list-style-type: none;              /* usuwa punktory z listy nieuporządkowanej*/
+    margin: 0;
+    padding: 10px;
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
 }
 #menu li {
     height:50px;
     width: 150px;
+    text-align: center;
+    padding-top: 30px; 
 }
 #menu li a {
     margin: 5px;
     background-color: red;
     color: white;
     padding: 10px 20px;
-    text-decoration: none;               /* usuwa podkreślenie i kolor linka "a href" */
-    border-radius: 6px 6px 6px 6px;      /*zaokrąglenie rogów elementu*/
-    float:left;
-    width: 80px;
+    text-decoration: none;
+    border-radius: 6px 6px 6px 6px;
 }
 #menu li a:hover { 
     background-color: rgb(0, 0, 0);
     color: white;
-    box-shadow: 0px 0px 2px 2px red;    /* cień prostokąta- odsunięcie horyzontalne; wertykalne; rozmycie; powiększenie cienia; kolor*/
+    box-shadow: 0px 0px 2px 2px red;
 }
 
-#tresc{
+#about_me {
     background-color: rgb(216, 216, 216);
-    width: 80%;
-    float: left;
-    height: 700px;
+    min-height: 500px;
+    padding: 20px;
 }
 
-#stopka{
-    clear: both;                           /* wyczyszczenie ustawień przylegania elementu*/
-    height: 10%;
+#projects {
+    background-color: rgb(211, 206, 206);
+    min-height: 500px;
+    padding: 20px;
+}
+
+#contact {
+    background-color: rgba(216,216,216);
+    min-height: 500px;
+    padding: 20px;
+}
+
+.main_title {
+    margin: 0;
+    text-align: center;
+}
+
+#foot {
+    clear: both;
     background-color: grey;
     color: red;
     text-align: center;
-    height: 80px;
-    padding-top: 20px;
-}
-#stopka:hover {
-    color: black;
-    text-shadow: 0px 0px 5px red;
-    transition-duration: 0.5s;
 }
 
